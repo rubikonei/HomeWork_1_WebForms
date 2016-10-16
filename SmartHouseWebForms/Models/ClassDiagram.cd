@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SmartHouseWebForms.Models.AbstractDevices.ClimateDevice">
+    <Position X="12.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAABADAAAEAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Models\AbstractDevices\ClimateDevice.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartHouseWebForms.Models.AbstractDevices.Device">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAEAAAAAAQAAAEAAAABAAAABAAAAIA=</HashCode>
+      <FileName>Models\AbstractDevices\Device.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartHouseWebForms.Models.Devices.Conditioner">
+    <Position X="14" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAEIAAgBABAAAEBAAAAAAEAAAAAAAAAAQAAAAEAIA=</HashCode>
+      <FileName>Models\Devices\Conditioner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartHouseWebForms.Models.Devices.Convector">
+    <Position X="12.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEIAAABABAAAEAAAAAAAAAAAAAAAAAAQAAAAEAIA=</HashCode>
+      <FileName>Models\Devices\Convector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartHouseWebForms.Models.Devices.EnergyMeter">
+    <Position X="6.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAEAAAAAAAIAAAACAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Models\Devices\EnergyMeter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartHouseWebForms.Models.Devices.TemperatureSensor">
+    <Position X="8.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAACAAAEAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Models\Devices\TemperatureSensor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="SmartHouseWebForms.Models.Interfaces.ICountEnergy">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Interfaces\ICountEnergy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartHouseWebForms.Models.Interfaces.IFan">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Interfaces\IFan.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartHouseWebForms.Models.Interfaces.ITemperature">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Models\Interfaces\ITemperature.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartHouseWebForms.Models.Interfaces.ITemperatureSensor">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Interfaces\ITemperatureSensor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
