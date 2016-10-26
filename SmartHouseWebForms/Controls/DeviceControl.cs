@@ -24,7 +24,6 @@ namespace SmartHouseWebForms.Controls
         private Label temperatureLabel;
         private Label allPowerLabel;
         private Label stateFanLabel;
-        private Label helpLabel;
 
         public DeviceControl(int id, IDictionary<int, Device> devicesList)
         {
@@ -35,7 +34,25 @@ namespace SmartHouseWebForms.Controls
 
         protected void Initializer()
         {
-            CssClass = "device";
+            if (devicesList[id] is ICountEnergy)
+            {
+                CssClass = "device energyMeter";
+            }
+
+            if (devicesList[id] is ITemperatureSensor)
+            {
+                CssClass = "device temperatureSensor";
+            }
+
+            if ((devicesList[id] is ClimateDevice) && (devicesList[id] is IFan))
+            {
+                CssClass = "device conditioner";
+            }
+
+            if ((devicesList[id] is ClimateDevice) && !(devicesList[id] is IFan))
+            {
+                CssClass = "device convector";
+            }
 
             Controls.Add(Span(devicesList[id].Name + "<br />"));
 
@@ -63,11 +80,6 @@ namespace SmartHouseWebForms.Controls
                 temperatureLabel = new Label();
                 temperatureLabel.Text = ((ITemperatureSensor)devicesList[id]).TemperatureEnvironment.ToString();
                 Controls.Add(temperatureLabel);
-
-                helpLabel = new Label();
-                helpLabel.CssClass = "helpLabel";
-                helpLabel.Text = "прим. служит для работы авто режима климатических устройств, кондиционер при 25 - 40 С, конвектор при -40 - 10 С";
-                Controls.Add(helpLabel);
             }
 
             if (devicesList[id] is ICountEnergy)

@@ -15,7 +15,7 @@ namespace SmartHouseWebForms.Models.Devices
             if (state == true)
             {
                 Temperature = 22;
-                Power = 2;
+                Power = 4;
             }
             Fan = fan;
         }
@@ -67,7 +67,7 @@ namespace SmartHouseWebForms.Models.Devices
         public override void On()
         {
             State = true;
-            Power = 2;
+            Power = 4;
             Temperature = 22;
         }
 

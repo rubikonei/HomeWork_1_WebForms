@@ -20,6 +20,39 @@
         </asp:DropDownList>
         <asp:Button ID="addDeviceButton" runat="server" Text="Добавить" />
         <asp:Panel ID="devicesPanel" runat="server"></asp:Panel>
+        <div id="helpPanel">
+            <span>Доступные команды:</span>
+            <br />
+            <a class="btn btn-default">
+                <span class="glyphicon glyphicon-remove"></span>
+            </a>
+            <span>Удалить устройство</span>
+            <br />
+            <a class="btn btn-default">
+                <span class="glyphicon glyphicon-off"></span>
+            </a>
+            <span>Включить/Выключить устройство</span>
+            <br />
+            <a class="btn btn-default">
+                <span class="glyphicon glyphicon-minus"></span>
+            </a>
+            <span>Уменьшить температуру</span>
+            <br />
+            <a class="btn btn-default">
+                <span class="glyphicon glyphicon-plus"></span>
+            </a>
+            <span>Увеличить температуру</span>
+            <br />
+            <a class="btn btn-default">
+                <span class="glyphicon glyphicon-ok-circle"></span>
+            </a>
+            <span>Включить автоматический режим, для кондиционера при 25 - 40 С, для конвектора при -40 - 10 С от температуры окружающей среды</span>
+            <br />
+            <a class="btn btn-default">
+                <span class="glyphicon glyphicon-flash"></span>
+            </a>
+            <span>Просмотр суммарной мощности всех устройств</span>
+        </div>
     </form>
 </body>
 </html>
